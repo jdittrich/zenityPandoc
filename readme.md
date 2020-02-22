@@ -2,6 +2,11 @@
 
 Simple bash script to convert a text file using pandoc with a zenity-based GUI.
 
+**Requires:**
+* POSIX compatible system (e.g. Linux)
+* [pandoc](https://pandoc.org/)
+* [zenity](https://wiki.gnome.org/Projects/Zenity)
+
 **Installation:** Make script executable
 
 **Run:** `./zenityPandoc.sh`
