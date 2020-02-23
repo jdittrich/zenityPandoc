@@ -9,9 +9,9 @@ Simple bash script to convert a text file using pandoc with a zenity-based GUI.
 
 **Installation:** Make script executable
 
-**Run:** `./zenityPandoc.sh`
+**Run:** `./zenityPandoc.sh` or run `./zenityPandoc.sh path/to/my/file`
 
 **Use:** 
 * Select the file you want to convert. 
 * Then select a target format. 
-* If the file does not exists yet, it will be immediately converted. If it does exits you will be asked if the file should be overwritten. 
+* If the file does not exist yet, it will be immediately converted. If it does exist, you will be asked if the file should be overwritten. 

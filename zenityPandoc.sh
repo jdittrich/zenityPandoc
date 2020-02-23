@@ -10,9 +10,12 @@ if ! command -v pandoc; then
   exit
 fi
 
-
-if ! SOURCEFILE=$(zenity --file-selection --title="Choose the file you want to convert using pandoc"); then
-  exit
+if [ $1 ] && [ -s $1 ]; then #check if first paramter is there and is an existing file
+  SOURCEFILE=$1
+else 
+  if ! SOURCEFILE=$(zenity --file-selection --title="Choose the file you want to convert using pandoc");  then
+    exit
+  fi
 fi
 
 if ! CONVERTTO=$(zenity --list --title="choose target format" --column="Format" --column="Text" \
